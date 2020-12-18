@@ -29,8 +29,8 @@ func FetchUsers() (res Response, err error) {
 
 	sqlQuery := `SELECT
 					id,
-					IFNULL(first_name,'') nama_depan,
-					IFNULL(last_name,'') nama_belakang,
+					IFNULL(first_name,'') first_name,
+					IFNULL(last_name,'') last_name,
 					IFNULL(email,'') email,
 					IFNULL(username,'') username,
 					IFNULL(password,'') password

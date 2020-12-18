@@ -20,5 +20,8 @@ func Init() *echo.Echo {
 	//EmployeesRoute ...
 	EmployeesRoute(e.Group("/employees"))
 
+	//SuppliersRoute ...
+	SuppliersRoute(e.Group("/suppliers"))
+
 	return e
 }
