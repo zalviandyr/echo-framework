@@ -11,7 +11,7 @@ func SuppliersRoute(g *echo.Group) {
 
 	g.POST("/add", controllers.StoreSupplier)
 
-	g.POST("/update/:supplierID", controllers.UpdateSupplier)
+	g.PUT("/update/:supplierID", controllers.UpdateSupplier)
 
-	g.POST("/delete/:supplierID", controllers.DeleteSupplier)
+	g.DELETE("/delete/:supplierID", controllers.DeleteSupplier)
 }

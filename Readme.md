@@ -90,3 +90,75 @@
     SuppliersRoute(e.Group("/suppliers"))
     ```
 12. Dan untuk mencek apakah telah berjalan, akses `127.0.0.1/suppliers/list`
+
+## Request
+
+-   List (GET)
+
+    ```
+    127.0.0.1:3000/suppliers/list
+    ```
+
+-   Add (POST)
+
+    ```
+    127.0.0.1:3000/suppliers/add
+    ```
+
+-   Update (PUT)
+
+    ```
+    127.0.0.1:3000/suppliers/update/:supplierID
+    ```
+
+-   Delete (DELETE)
+
+    ```
+    127.0.0.1:3000/suppliers/delete/:supplierID
+    ```
+
+## Response
+
+-   List
+
+    ```json
+    {
+        "status": 200,
+        "message": "Success",
+        "data": [
+            {
+                "SupplierID": "1",
+                "CompanyName": "Exotic Liquids",
+                "ContactName": "Charlotte Cooper",
+                "ContactTitle": "Purchasing Manager"
+            },
+            ...
+        ]
+    }
+    ```
+
+-   Add
+
+    ```json
+    {
+        "status": 201,
+        "message": "Success created"
+    }
+    ```
+
+-   Update
+
+    ```json
+    {
+        "status": 201,
+        "message": "Success update"
+    }
+    ```
+
+-   Delete
+    ```json
+    {
+        "status": 201,
+        "message": "Success delete"
+    }
+    ```
