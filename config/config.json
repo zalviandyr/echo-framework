@@ -1,0 +1,7 @@
+{
+    "DB_NAME": "northwind",
+    "DB_USERNAME": "root",
+    "DB_PASSWORD": "",
+    "DB_PORT": "3306",
+    "DB_HOST": "localhost"
+}
