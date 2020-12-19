@@ -2,6 +2,7 @@
 
 -   `git clone` this repository
 -   Open with vscode
+-   Exec `go env -w GO111MODULE=on` to activate go module
 -   Exec `go mod vendor` for install all depedencies
 
 ## Run
